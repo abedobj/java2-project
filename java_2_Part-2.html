@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    
+    <p style="text-align: center;font-weight: bold;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-decoration: underline;">This is an app that checks the different forms of data and outputs the type </p>
+
+<div style="text-align: center;">
+    <button id="button" style="font-size: 20px; border: solid 2px lightseagreen;">click</button>
+</div>
+
+    <h3 id="body"></h3>
+
+
+    <script>
+
+    const buttonclick = document.getElementById('button')
+    const bodyelement = document.getElementById('body')
+
+    let name = 'skyline'
+    let age = 30
+    let price = 2.00
+    let student = true
+    let people = 
+
+    
+    
+
+   console.log('The type of name is: ', typeof (name))
+   console.log('The type os age is: ', typeof (age))
+   console.log('The type of price is: ', typeof(price))
+   console.log('The type of student is: ', typeof student)
+   console.log('The type of people is: ', typeof people)
+
+
+
+    buttonclick.onclick = function () {
+         var datatype = '';
+         datatype = prompt("Please input the datatype")
+
+
+     if (datatype === ''){
+        console.log("The datatype is a string")
+      
+     }
+else {
+    console.log('The datatype is not a string')
+}
+
+    }   
+
+    </script>
+
+
+
+</body>
+</html>

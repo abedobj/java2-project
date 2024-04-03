@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inner html</title>
+</head>
+<body>
+    <button id="button" style="font-size: 20px; border: solid 2px greenyellow;">Investor calculator</button>
+
+    <h3 id="body"></h3>
+    <h4 id="case"></h4>
+
+
+
+<script>
+
+const buttonclick = document.getElementById('button')
+const bodyelement = document.getElementById('body')
+
+
+
+
+buttonclick.onclick = function(){
+    const principal = prompt("Please enter your investement amount");
+    let interest = 0.25;
+    let vat = 0.05
+    let earnings_before_tax = (principal * (1+interest)) 
+    bodyelement.innerHTML = `Your PBT is =N=${earnings_before_tax}`
+    
+}
+
+
+
+
+
+    
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
